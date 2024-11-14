@@ -1,0 +1,108 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #c80053; /* Cor de fundo rosa */
+    --branco: #FFFFFF;
+    --rosa-claro: #ffffff; /* Rosa claro */
+    --rosa-vibrante: #e20951; /* Rosa vibrante */
+    --rosa-escuro: #a4033e; /* Rosa escuro */
+    --rosa-gradiente: linear-gradient(97.54deg, #ff5191 35.49%, #ff0055 165.37%); /* Gradiente rosa */
+    --fonte-principal: "Poppins";
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--preto);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--rosa-escuro);
+    color: var(--branco);
+}
+
+button, .btn {
+    background-color: var(--rosa-vibrante);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--rosa-escuro);
+    transform: scale(1.05);
+}
+
+button:focus, .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(204, 0, 72, 0.5); /* Efeito de foco com sombra suave */
+}
+
+a {
+    color: var(--rosa-escuro);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--rosa-vibrante);
+    text-decoration: underline;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--rosa-escuro);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(204, 0, 72, 0.2); /* Efeito de foco suave nos campos */
+}
+
+.container {
+    background-color: var(--rosa-claro);
+    padding: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--rosa-escuro);
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Ajustes específicos para cabeçalhos e rodapé */
+header {
+    background: var(--rosa-gradiente); /* Gradiente no cabeçalho */
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--rosa-escuro);
+    padding: 1em;
+    text-align: center;
+}
+
+/* Links dentro de containers */
+.container a {
+    color: var(--rosa-vibrante);
+}
+
+.container a:hover {
+    color: var(--rosa-escuro);
+}
